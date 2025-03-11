@@ -1,0 +1,409 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+  font-family: "Poppins",sans-serif;
+}
+
+.navbar{
+  position: absolute;
+  top:0px;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+  z-index: 10;
+}
+
+.navbar_netflix{
+  height:100%;
+  width: 125px;
+}
+
+.navbar_nav_items{
+  display: flex;
+  gap: 10px;
+}
+
+.netflix_logo{
+  width: 100%;
+  height: 100%;
+}
+
+.language_drop_down{
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.dropdown_container{
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 4px;
+  background: rgba(0,0,0,0.4);
+}
+
+.signin_button{
+  border: #dc030f;
+  background-color: #dc030f;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  height: 35px;
+  width: 100px;
+}
+
+.hero_bg_img_cont{
+  width: 100%;
+  height: 100%;  
+}
+
+.hero_bg_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_bg_overlay{
+  position: absolute;
+  inset:0;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.7);
+}
+
+.hero_card{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero_title{
+  font-weight: 600;
+  font-size: 3rem;
+}
+.hero_subtitle,
+.hero_desc{
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.email{
+  width: 300px;
+  height: 47px;
+  colour: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.6);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.001px;
+  border-color: white;
+}
+
+.get_started{
+  font-size: large;
+  width: 170px;
+  height: 46px;
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+}
+
+.title{
+  color:#fff;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+#page_breaker{
+  color: #dc030f;
+  border-radius: 100px;
+}
+.movies_list{
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card_container{
+  width: 96%;
+  padding-left: 4%;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center; 
+}
+
+.card{
+  position: relative;
+  min-width: 150px;
+  width: 150;
+  height: 200px;
+  border-radius: 5px;
+  overflow:hidden;
+  margin-left:10px;
+  transition: .5s;
+  background: #000;
+}
+.card:hover{
+  transform:scale(1.1);
+}
+
+.card:hover .card-body{
+  opacity: 1;
+}
+.card-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pre-btn
+.nxt-btn{
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  
+}
+#container{
+  display: flex;
+  height: 400px;
+  padding-top: 5px;
+  padding: 15px 65px;
+  background-color: #000;
+}
+
+#container div{
+  width:280px;
+  height:230px;
+  background-color: #222138;  
+  margin: 8px;px;
+  text-align: left;
+  color: white;
+  font-family: "Poppins",sans-serif;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 17px;  
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.card_container{
+  display: grid;
+  gap:var(--size-5);
+  grid-auto-flow: column;
+  grid-auto-columns: 17%;
+  width:100% ;
+  height: max-content;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-left:80px ;
+ overflow:hidden;
+  
+}
+
+#C-1_head h2{
+  padding: 25px 40px;
+  padding-left: 10%;
+}
+
+.cc{
+  border-radius: 7%;
+  size-adjust: 120px;
+  padding: 20px 50px ;
+}
+
+.cc:hover{
+  transform: scale(1.1);
+}
+.movie-list{
+  display: grid;
+  grid-template-rows: min-content;
+  gap:var(--size-5);
+  padding:var(--size-5);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  
+}
+
+.pre-btn,.nxt-btn{
+  border:none;
+  width: 15vw;
+  height: 40%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: transparent;
+ 
+  cursor: pointer;
+  z-index: 9%;
+  
+}
+
+.pre-btn{
+  left:0;  
+}
+.nxt-btn{
+  right: 0;
+ }
+.pre-btn img,
+.nxt-btn img{
+  opacity: 0.2;
+  width: 80px;
+ 
+  
+  
+}
+.pre-btn:hover img,
+.nxt-btn:hover img{
+  opacity:1;
+}
+
+
+
+
+.card-2 ,.card-1 h2{
+  padding: 20px 80px;
+}
+
+.C2 {
+  align-items: end;
+  padding-left: 0;
+  padding-right: 0;
+  size-adjust: 5%;
+  width: 93px;
+  margin-top: 16px;
+  float:right 
+  
+  
+
+}
+
+.desc-3 h4{
+  padding: 20px 18px;
+  width: 85%;
+  text-align: left;
+  font-size: 23px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 25px;
+}
+.desc-3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desc-3 button{
+  padding: 20px 50px;
+  width: 85%;
+  font-size: 20px;
+  font-weight: 500;
+  font-family:  "Poppins",sans-serif;
+  background: #353232;
+  color: #fff;
+  text-align: left;
+  border: 0;
+  outline: 0;
+  margin-bottom: 10px;
+}
+
+.desc-3 button:hover{
+  background: #5a5757;
+}
+
+.desc-3 button::after{
+  content:"+";
+  float:right;
+  font-size: 32px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #999;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.faq-footer,.header-text{
+  margin-top: 40px;
+  margin-bottom: 40px;
+ 
+}
+.Bottom-bar{
+  padding-left: 23%;
+  border:0;
+  border-radius: 1px;
+ }
+
+ .footer,.tittle{
+  padding: 20px 50px;
+  padding-left: 13%;
+ }
+.footer,
+.footer a{
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p{
+  margin-bottom: 2.0rem;;
+}
+
+.footer .footer-cols{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 2rem;
+  padding-left: 50px;
+}
+
+.footer li{
+  line-height: 1.9;
+}
+.footer_dropdown{
+  border: 1px solid white;
+  padding: 0.4rem;
+  border-radius: 3px;
+  background: rgba(0,0,0,0.4);
+}
+
+.lang_drop{
+  width: 120px;
+}
+
